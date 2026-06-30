@@ -10,7 +10,7 @@ type Props = {
 
 function MegaMenu({activeMenu}:Props){
     return(
-        <>
+        <div className="absolute z-50 bg-white w-full">
         {
             activeMenu === "Domains" && <DomainMegaMenu/>
         }
@@ -26,7 +26,7 @@ function MegaMenu({activeMenu}:Props){
         {
             activeMenu === "Security" && <SecurityMegaMenu/>
         }
-        </>
+        </div>
     )
 }
 
