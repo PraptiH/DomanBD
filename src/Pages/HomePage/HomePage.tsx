@@ -5,9 +5,9 @@ import PopularDomain from "../../Components/PopularDomain/PopularDomain"
 function HomePage() {
     return (
         <>
-            <div className="border-2 border-red-700 w-full">
+            <div>
                 <Header />
-                
+
                 <HeroSection />
 
                 <PopularDomain />

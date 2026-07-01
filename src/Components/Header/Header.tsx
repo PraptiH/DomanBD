@@ -15,49 +15,59 @@ function Header() {
     return (
         <>
             <div>
-                <div className="bg-black text-white flex items-center justify-around px-8 py-5">
+                <div className="bg-black text-white flex items-center justify-around gap-5 py-5 px-8">
 
-                    <div className="flex items-center gap-8">
-                        <div className="flex items-center gap-3.75">
-                            <img className="w-20" src={logo} alt="" />
-                            <h2 className="font-bold text-4xl">DomainBD <sub className="font-normal text-lg -ml-22 top-5">Bangladesh</sub></h2>
+                    <div className="flex items-center gap-5">
+                        <div className="flex items-center gap-3">
+                            <img className="w-15" src={logo} alt="" />
+                            <h2 className="font-bold text-2xl relative">DomainBD <sub className="font-normal text-sm lg:left-12 top-6 absolute">Bangladesh</sub></h2>
                         </div>
 
-                        <div className="flex items-center gap-8 font-medium text-lg">
+                        <div className="flex items-center gap-4 font-medium text-base">
 
-                            <MenuButton
-                                name="Domains"
-                                activeMenu={activeMenu}
-                                clickMenu={handleMenuClick}
-                            />
+                            <div>
+                                <MenuButton
+                                    name="Domains"
+                                    activeMenu={activeMenu}
+                                    clickMenu={handleMenuClick}
+                                />
+                            </div>
 
-                            <MenuButton
-                                name="Websites"
-                                activeMenu={activeMenu}
-                                clickMenu={handleMenuClick}
-                            />
+                            <div>
+                                <MenuButton
+                                    name="Websites"
+                                    activeMenu={activeMenu}
+                                    clickMenu={handleMenuClick}
+                                />
+                            </div>
 
                             <div>
                                 <NavLink to='/email'>Email</NavLink>
                             </div>
 
-                            <MenuButton
-                                name="Hosting"
-                                activeMenu={activeMenu}
-                                clickMenu={handleMenuClick}
-                            />
+                            <div>
+                                <MenuButton
+                                    name="Hosting"
+                                    activeMenu={activeMenu}
+                                    clickMenu={handleMenuClick}
+                                />
+                            </div>
 
-                            <MenuButton
-                                name="Marketing"
-                                activeMenu={activeMenu}
-                                clickMenu={handleMenuClick}
-                            />
+                            <div>
+                                <MenuButton
+                                    name="Marketing"
+                                    activeMenu={activeMenu}
+                                    clickMenu={handleMenuClick}
+                                />
+                            </div>
 
-                            <MenuButton
-                                name="Security"
-                                activeMenu={activeMenu}
-                                clickMenu={handleMenuClick}
-                            />
+                            <div>
+                                <MenuButton
+                                    name="Security"
+                                    activeMenu={activeMenu}
+                                    clickMenu={handleMenuClick}
+                                />
+                            </div>
 
                             <div>
                                 <NavLink to='/aiBuilder'>Ario AI Builder</NavLink>
@@ -69,7 +79,7 @@ function Header() {
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-5 text-lg">
+                    <div className="flex items-center gap-3 text-base">
                         <NavLink to="/deals">Deals</NavLink>
                         <NavLink to="/contact">Contact Us</NavLink>
                         <NavLink to="/help">Help</NavLink>

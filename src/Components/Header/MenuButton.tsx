@@ -8,7 +8,7 @@ function MenuButton({ name, activeMenu, clickMenu }: Props) {
     const isActive = activeMenu === name;
     return (
         <div onClick={()=>{clickMenu(name)}}
-        className={`flex items-center gap-1 cursor-pointer p-3 rounded-lg
+        className={`flex items-center cursor-pointer p-2 rounded-lg
             ${isActive? "bg-white text-black" : ""}`}
         >
             <p>{name}</p>
