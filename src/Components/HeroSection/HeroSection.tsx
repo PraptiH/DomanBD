@@ -2,8 +2,8 @@ import logo from '../../assets/logo.png'
 function HeroSection() {
     return (
         <>
-            <div className="sticky top-0 bg-[#e7f1f1]">
-                <div className='flex mx-15 p-5 relative'>
+            <div className=" bg-[#e7f1f1] mx-15 rounded-2xl">
+                <div className='flex p-5 relative'>
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" color="gray"
                         fill="currentColor" viewBox="0 0 24 24"

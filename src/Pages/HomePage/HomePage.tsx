@@ -1,12 +1,17 @@
 import Header from "../../Components/Header/Header"
 import HeroSection from "../../Components/HeroSection/HeroSection"
+import PopularDomain from "../../Components/PopularDomain/PopularDomain"
 
 function HomePage() {
-    return(
+    return (
         <>
-        <Header/>
+            <div className="border-2 border-red-700 w-full">
+                <Header />
+                
+                <HeroSection />
 
-        <HeroSection/>
+                <PopularDomain />
+            </div>
         </>
     )
 }
