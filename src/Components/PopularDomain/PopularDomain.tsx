@@ -38,13 +38,13 @@ function PopularDomain() {
     return (
         <>
 
-            <div className="bg-blue-50 rounded-2xl mx-15">
+            <div className="bg-blue-50 rounded-2xl m-15 py-10">
                 <div className="text-center space-y-3">
-                    <h1 className="font-bold text-8xl tracking-wider text-[#0F172A]">Popular Domain Extensions</h1>
-                    <p className="font-medium text-2xl">Find the perfect domain for your band</p>
+                    <h1 className="font-bold text-5xl tracking-wider text-[#0F172A]">Popular Domain Extensions</h1>
+                    <p className="font-medium text-xl">Find the perfect domain for your band</p>
                 </div>
 
-                <div className="flex flex-wrap justify-center gap-8 p-6">
+                <div className="flex flex-wrap justify-center gap-8 px-6 py-12">
                     {domains.map((domain) => (
                         <DomainCard key={domain.extension} domain={domain} />
                     ))}
