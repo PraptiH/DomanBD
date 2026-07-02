@@ -1,6 +1,7 @@
 import Header from "../../Components/Header/Header"
 import HeroSection from "../../Components/HeroSection/HeroSection"
 import PopularDomain from "../../Components/PopularDomain/PopularDomain"
+import ServiceSection from "../../Components/ServiceSection/ServiceSection"
 
 function HomePage() {
     return (
@@ -11,6 +12,8 @@ function HomePage() {
                 <HeroSection />
 
                 <PopularDomain />
+
+                <ServiceSection/>
             </div>
         </>
     )
