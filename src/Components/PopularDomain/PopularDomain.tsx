@@ -5,18 +5,24 @@ function PopularDomain() {
         extension: string,
         price: string,
         description: string,
+        badgeInfo?:string,
+        badgeColor?:string
     }
 
     const domains: Domain[] = [
         {
             extension: ".com",
             price: "Tk 1200/year",
-            description: "The world's most popular domain"
+            description: "The world's most popular domain",
+            badgeInfo: "Most Popular",
+            badgeColor:"bg-blue-800"
         },
         {
             extension: ".bd",
             price: "Tk 1200/year",
-            description: "Perfect for businesses in Bangladesh"
+            description: "Perfect for businesses in Bangladesh",
+            badgeInfo: "Best for Bangladesh",
+            badgeColor:"bg-green-900"
         },
         {
             extension: ".net",
@@ -49,6 +55,13 @@ function PopularDomain() {
                         <DomainCard key={domain.extension} domain={domain} />
                     ))}
                 </div>
+                <button className="border-2 border-blue-700 rounded-full px-4 py-2 mx-auto flex items-center cursor-ponter font-medium">View all domain extensons
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 24 24" color="blue"
+                        className="w-10">
+                        <path d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"></path>
+                    </svg>
+                </button>
             </div>
 
         </>
