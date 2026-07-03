@@ -50,40 +50,34 @@ function ServiceSection() {
     ]
 
     return (
-        <>
-            <div className='relative p-6 '>
+        <div className='p-6'>
+            <div className='relative overflow-hidden rounded-2xl min-h-350 sm:min-h-300 md:min-h-245 lg:min-h-0'>
+                <img className='absolute inset-0 h-full w-full object-cover' src={bgImg} alt="" />
 
-                <img className=' w-full rounded-2xl' src={bgImg} alt="" />
-
-
-                <div className='absolute inset-0 flex items-center px-6 '>
-
-                    <div className=' w-full space-y-12 '>
-
-                        <div className='space-y-5 text-white text-center lg:-translate-y-4'>
-                            <h2 className='text-4xl font-bold leading-tight md:text-5xl'>Everything you need to Succeed Online</h2>
-                            <p className='text-lg font-medium leading-8 md:text-xl'>Powerful products and tools to bring your ideas to life</p>
-                        </div>
-
-                        <div className='flex flex-wrap justify-center'>
-                            {
-                                services.map((service, index) =>
-                                    <ServicesCard key={service.title} service={service} index={index} />)
-                            }
-                        </div>
-                        
-                        <button className="flex items-center mx-auto gap-3 rounded-full bg-white px-6 py-3 font-medium text-teal-900 cursor-pointer">
-                            Explore all services
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor" viewBox="0 0 24 24" color="teal"
-                                className="h-5 w-5">
-                                <path d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"></path>
-                            </svg>
-                        </button>
+                <div className='relative z-10 flex h-full flex-col items-center justify-center px-4 py-10 sm:px-6 md:px-8 lg:px-6 lg:space-y-12'>
+                    <div className='space-y-4 text-center text-white sm:space-y-5'>
+                        <h2 className='text-2xl font-bold leading-tight sm:text-3xl lg:text-4xl'>Everything you need to Succeed Online</h2>
+                        <p className='text-sm font-medium leading-6 sm:text-base sm:leading-7 lg:text-lg lg:leading-8'>Powerful products and tools to bring your ideas to life</p>
                     </div>
+
+                    <div className='flex flex-wrap justify-center gap-4 sm:gap-5'>
+                        {
+                            services.map((service,index) =>
+                                <ServicesCard key={service.title} service={service} index={index}  />)
+                        }
+                    </div>
+
+                    <button className="mt-4 flex items-center gap-3 rounded-full bg-white px-5 py-3 text-sm font-medium text-teal-900 cursor-pointer sm:px-6 sm:text-base lg:mt-0">
+                        Explore all services
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 24 24" color="teal"
+                            className="h-5 w-5">
+                            <path d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
