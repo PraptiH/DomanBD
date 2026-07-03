@@ -50,8 +50,8 @@ function ServiceSection() {
     ]
 
     return (
-        <div className='p-6'>
-            <div className='relative overflow-hidden rounded-2xl min-h-350 sm:min-h-300 md:min-h-245 lg:min-h-0'>
+        
+            <div className='relative overflow-hidden m-15 rounded-2xl min-h-350 sm:min-h-300 md:min-h-245 lg:min-h-0'>
                 <img className='absolute inset-0 h-full w-full object-cover' src={bgImg} alt="" />
 
                 <div className='relative z-10 flex h-full flex-col items-center justify-center px-4 py-10 sm:px-6 md:px-8 lg:px-6 lg:space-y-12'>
@@ -60,7 +60,7 @@ function ServiceSection() {
                         <p className='text-sm font-medium leading-6 sm:text-base sm:leading-7 lg:text-lg lg:leading-8'>Powerful products and tools to bring your ideas to life</p>
                     </div>
 
-                    <div className='flex flex-wrap justify-center gap-4 sm:gap-5'>
+                    <div className='flex flex-wrap justify-center pt-8 gap-4 sm:gap-5'>
                         {
                             services.map((service,index) =>
                                 <ServicesCard key={service.title} service={service} index={index}  />)
@@ -77,7 +77,7 @@ function ServiceSection() {
                     </button>
                 </div>
             </div>
-        </div>
+        
     )
 }
 
