@@ -1,3 +1,4 @@
+import FAQ from "../../Components/FAQ/FAQ"
 import Header from "../../Components/Header/Header"
 import HeroSection from "../../Components/HeroSection/HeroSection"
 import PopularDomain from "../../Components/PopularDomain/PopularDomain"
@@ -17,6 +18,8 @@ function HomePage() {
                 <ServiceSection/>
 
                 <WhyChoose/>
+
+                <FAQ/>
             </div>
         </>
     )
