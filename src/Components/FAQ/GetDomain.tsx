@@ -11,18 +11,18 @@ function GetDomain() {
                     <p className="font-medium text-lg tracking-wide text-gray-800">It's quick, easy and hassle-free</p>
                 </div>
 
-                <div className='flex flex-wrap items-center justify-center lg:justify-around lg:flex-row flex-col gap-5 lg:gap-0'>
+                <div className='flex flex-wrap items-center justify-center lg:justify-around lg:flex-row flex-col gap-8 lg:gap-0 px-2'>
                     <div className='flex items-start gap-5 max-w-100 min-h-30'>
-                        <p className="flex h-15 w-15 shrink-0 items-center justify-center rounded-full bg-[#006F75] font-medium text-white">01</p>
+                        <p className="flex h-12 w-12 lg:h-15 lg:w-15 md:h-15 md:w-15 shrink-0 items-center justify-center rounded-full bg-[#006F75] font-medium text-white">01</p>
                         <div className='flex max-[600px]:flex-wrap max-[600px]:justify-center items-center gap-4 '>
 
-                            <div className='rounded-full w-20 h-20 flex shrink-0 bg-white'>
+                            <div className='rounded-full w-16 h-16 lg:w-20 lg:h-20 md:w-20 md:h-20 flex shrink-0 bg-white'>
                                 <img className='p-4' src={search} alt="" />
                             </div>
 
                             <div>
-                                <h3 className='font-medium text-2xl'>Search Your Domain</h3>
-                                <p className='text-lg'>Enter your desired domain name and check availability</p>
+                                <h3 className='font-medium text-xl lg:text-2xl md:text-2xl'>Search Your Domain</h3>
+                                <p className='text-base lg:text-lg md:text-lg'>Enter your desired domain name and check availability</p>
                             </div>
                         </div>
                     </div>
@@ -34,16 +34,16 @@ function GetDomain() {
                     </svg>
 
                     <div className='flex items-start gap-5 max-w-100 min-h-30'>
-                        <p className="flex h-15 w-15 shrink-0 items-center justify-center rounded-full bg-[#006F75] font-medium text-white">02</p>
+                        <p className="flex h-12 w-12 lg:h-15 lg:w-15 md:h-15 md:w-15 shrink-0 items-center justify-center rounded-full bg-[#006F75] font-medium text-white">02</p>
                         <div className='flex max-[600px]:flex-wrap max-[600px]:justify-center items-center gap-4'>
 
-                            <div className='rounded-full w-20 h-20 flex shrink-0 bg-white'>
+                            <div className='rounded-full w-16 h-16 lg:w-20 lg:h-20 md:w-20 md:h-20 flex shrink-0 bg-white'>
                                 <img className='p-4 object-contain' src={cart} alt="" />
                             </div>
 
                             <div>
-                                <h3 className='font-medium text-2xl'>Choose & Register</h3>
-                                <p className='text-lg'>Select your domain and complete the registration</p>
+                                <h3 className='font-medium text-xl lg:text-2xl md:text-2xl'>Choose & Register</h3>
+                                <p className='text-base lg:text-lg md:text-lg'>Select your domain and complete the registration</p>
                             </div>
                         </div>
                     </div>
@@ -55,16 +55,16 @@ function GetDomain() {
                     </svg>
 
                     <div className='flex items-start gap-5 max-w-100 min-h-30'>
-                        <p className="flex h-15 w-15 shrink-0 items-center justify-center rounded-full bg-[#006F75] font-medium text-white">03</p>
+                        <p className="flex h-12 w-12 lg:h-15 lg:w-15 md:h-15 md:w-15 shrink-0 items-center justify-center rounded-full bg-[#006F75] font-medium text-white">03</p>
                         <div className='flex max-[600px]:flex-wrap max-[600px]:justify-center items-center gap-4'>
 
-                            <div className='rounded-full w-20 h-20 flex shrink-0 bg-white'>
+                            <div className='rounded-full w-16 h-16 lg:w-20 lg:h-20 md:w-20 md:h-20 flex shrink-0 bg-white'>
                                 <img className='p-4' src={rocket} alt="" />
                             </div>
 
                             <div>
-                                <h3 className='font-medium text-2xl'>Launch Your Dream</h3>
-                                <p className='text-lg'>Your domain is ready. Start building your online presence</p>
+                                <h3 className='font-medium text-xl lg:text-2xl md:text-2xl'>Launch Your Dream</h3>
+                                <p className='text-base lg:text-lg md:text-lg'>Your domain is ready. Start building your online presence</p>
                             </div>
                         </div>
                     </div>

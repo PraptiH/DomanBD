@@ -14,23 +14,12 @@ type Props = {
 function SubMenu({ currentScreen, activeMenu, goBack, }: Props) {
 
     return (
-        <div
-            className={`
-                absolute top-0 left-0
-                w-full h-full flex flex-col
-                bg-white
-                transition-transform duration-300
-                ${currentScreen === "submenu"
-                    ? "translate-x-0"
-                    : "translate-x-full"
-                }
-            `}
-        >
+        <div className={` absolute top-0 left-0 w-full h-full flex flex-col bg-white transition-transform duration-300
+                ${currentScreen === "submenu" ? "translate-x-0" : "translate-x-full" }`} >
+
             {/* Header */}
-            <div
-                className="flex items-center gap-3 p-5 border-b cursor-pointer"
-                onClick={goBack}
-            >
+            <div className="flex items-center gap-3 p-5 border-b cursor-pointer"
+                onClick={goBack} >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="22"

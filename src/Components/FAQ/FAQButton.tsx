@@ -14,7 +14,7 @@ function FAQButton({ question, answer, activeQuestion, clickMenu }: Faqs) {
                 bg-blue-50
             ${isActive ? "bg-white text-black" : ""}`}>
 
-                <p className="font-semibold text-xl tracking-wide">{question}</p>
+                <p className="font-semibold text-base lg:text-xl md:text-xl tracking-wide">{question}</p>
 
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ function FAQButton({ question, answer, activeQuestion, clickMenu }: Faqs) {
             <div>
 
                 {
-                    isActive && (<p className="bg-white rounded-b-2xl border-t-2 p-4 font-medium text-lg">{answer}</p>)
+                    isActive && (<p className="bg-white rounded-b-2xl border-t-2 p-4 font-medium text-base lg:text-lg md:text-lg">{answer}</p>)
                 }
 
             </div>

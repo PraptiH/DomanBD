@@ -17,7 +17,7 @@ function FAQ() {
 
     return (
         <>
-            <div className="bg-indigo-100 rounded-2xl m-15 py-15">
+            <div className="bg-indigo-100 rounded-2xl m-8 lg:m-15 md:m-15 py-15">
                 <GetDomain />
 
                 <div className="flex flex-col items-center space-y-5 my-20">

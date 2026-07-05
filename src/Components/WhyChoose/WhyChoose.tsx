@@ -43,10 +43,10 @@ function WhyChoose() {
 
     return (
         <>
-            <div className="bg-blue-50 rounded-2xl m-15 py-5">
+            <div className="bg-blue-50 rounded-2xl m-8 lg:m-15 md:m-15 py-5">
                 <div className="text-center py-8 space-y-2">
                     <h1 className="font-bold text-4xl">Why Choose DomainBD?</h1>
-                    <p className="font-medium text-lg text-gray-700">We are more then just a domain register</p>
+                    <p className="font-medium text-lg text-gray-700 tracking-wide">We are more then just a domain register</p>
                 </div>
 
                 <div className="gap-5 flex flex-wrap items-center justify-center">

@@ -16,7 +16,6 @@ function Header() {
     }
 
     const handleHamburger = () => {
-        console.log("click")
         setIsMenuOpen(prev => !prev)
     }
 

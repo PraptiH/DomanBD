@@ -51,7 +51,7 @@ function ServiceSection() {
 
     return (
         
-            <div className='relative overflow-hidden m-15 rounded-2xl min-h-350 sm:min-h-300 md:min-h-245 lg:min-h-0'>
+            <div className='relative overflow-hidden m-8 lg:m-15 md:m-15 rounded-2xl min-h-350 sm:min-h-300 md:min-h-245 lg:min-h-0'>
                 <img className='absolute inset-0 h-full w-full object-cover' src={bgImg} alt="" />
 
                 <div className='relative z-10 flex h-full flex-col items-center justify-center px-4 py-10 sm:px-6 md:px-8 lg:px-6 lg:space-y-12'>

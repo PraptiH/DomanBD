@@ -25,26 +25,15 @@ function MobileMenu({ isMenuOpen, closeMenu }: Props) {
 
     return (
         <>
-            
+
             {isMenuOpen && (
-                <div
-                    className="fixed inset-0 bg-black/50 z-40 lg:hidden"
-                    onClick={closeMenu}
-                />
+                <div className="lg:hidden" onClick={closeMenu} />
             )}
 
-             {/* Sidebar  */}
-            <div
-                className={`
-                    fixed top-0 left-0
-                    w-full h-screen
-                    bg-white text-black
-                    z-50
-                    overflow-hidden
-                    transition-transform duration-300 ease-in-out
-                    ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}
-                `}
-            >
+            {/* Sidebar  */}
+            <div className={`fixed top-0 left-0 w-full h-screen bg-white text-black z-1 overflow-hidden transition-transform duration-300 ease-in-out
+                    ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
+
                 {/* Header */}
                 <div className="flex items-center justify-between p-5 border-b">
                     <div className="flex items-center">
@@ -58,24 +47,19 @@ function MobileMenu({ isMenuOpen, closeMenu }: Props) {
                         )}
                     </div>
 
-                    <button
-                        onClick={closeMenu}
-                        className="text-3xl cursor-pointer"
-                    >
+                    <button onClick={closeMenu} className="text-3xl cursor-pointer">
                         &times;
                     </button>
                 </div>
 
                 {/* Main Menu */}
-                <div
-                    className={` absolute top-18 left-0 w-full h-[calc(100%-73px)] overflow-y-auto
+                <div className={` absolute top-18 left-0 w-full h-[calc(100%-73px)] overflow-y-auto
                         bg-white transition-transform duration-300 font-medium
                         ${currentScreen === "main"
-                            ? "translate-x-0"
-                            : "-translate-x-full"
-                        }
-                    `}
-                >
+                        ? "translate-x-0"
+                        : "-translate-x-full"
+                    } `}>
+
                     <div className="flex flex-col gap-6 p-6">
 
                         <MenuButton

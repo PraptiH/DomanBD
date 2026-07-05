@@ -19,9 +19,9 @@ function ServicesCard({ service, index }: ServiceCardprops) {
     ];
 
     return (
-        <div className={`${index !== 0 ? "ml-0 sm:ml-1" : ""} w-full sm:w-auto`}>
+        <div className={`${index !== 0 ? "ml-0 sm:ml-1" : ""} w-auto `}>
             <div
-                className={`relative w-full max-w-[18rem] shadow-2xl rounded-xl bg-white px-5 py-6 
+                className={`relative w-full max-w-[18rem] shadow-2xl rounded-xl bg-white px-5 py-6
                     transition-all duration-300 hover:-translate-y-6 hover:rotate-0 hover:scale-130 
                     hover:z-100 sm:w-60 sm:max-w-none ${positionClasses[index]}`}>
 
