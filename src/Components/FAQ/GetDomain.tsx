@@ -7,7 +7,7 @@ function GetDomain() {
         <>
             <div className='space-y-8'>
                 <div className="text-center space-y-2">
-                    <h1 className="font-bold text-4xl">Get your Domain in 3 simple steps</h1>
+                    <h1 className="font-bold text-3xl">Get your Domain in 3 simple steps</h1>
                     <p className="font-medium text-lg tracking-wide text-gray-800">It's quick, easy and hassle-free</p>
                 </div>
 

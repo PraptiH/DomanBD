@@ -1,7 +1,11 @@
-function DomainMegaMenu() {
+type Mobile = {
+    mobile?:boolean
+}
+
+function DomainMegaMenu({mobile}:Mobile) {
     return (
         <>
-            <div className="flex items-center gap-12 border px-20">
+            <div className={mobile? "flex flex-col gap-": "flex flex-row gap-8"}>
                 <div className="m-5">
                     <h5 className="text-base font-medium ">FIND A DOMAIN</h5>
                     <div className="flex flex-col gap-10 mt-5">

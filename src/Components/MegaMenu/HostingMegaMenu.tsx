@@ -1,8 +1,13 @@
 import logoBlack from '../../assets/logo-black.png'
-function HostingMegaMenu() {
+
+type Mobile = {
+    mobile?:boolean
+}
+
+function HostingMegaMenu({mobile}:Mobile) {
     return (
         <>
-            <div className="flex items-start gap-12 px-20">
+            <div className={mobile? "flex flex-col gap-4": "flex flex-row gap-8"}>
                 <div className="m-5">
                     <h5 className="text-base font-medium">HOSTING</h5>
                     <div className="flex flex-col gap-10 mt-5">

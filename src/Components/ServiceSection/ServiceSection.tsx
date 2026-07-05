@@ -56,8 +56,8 @@ function ServiceSection() {
 
                 <div className='relative z-10 flex h-full flex-col items-center justify-center px-4 py-10 sm:px-6 md:px-8 lg:px-6 lg:space-y-12'>
                     <div className='space-y-4 text-center text-white sm:space-y-5'>
-                        <h2 className='text-2xl font-bold leading-tight sm:text-3xl lg:text-4xl'>Everything you need to Succeed Online</h2>
-                        <p className='text-sm font-medium leading-6 sm:text-base sm:leading-7 lg:text-lg lg:leading-8'>Powerful products and tools to bring your ideas to life</p>
+                        <h2 className='text-3xl font-bold leading-tight sm:text-3xl lg:text-4xl'>Everything you need to Succeed Online</h2>
+                        <p className='text-lg font-medium leading-6 sm:text-base sm:leading-7 lg:text-lg lg:leading-8'>Powerful products and tools to bring your ideas to life</p>
                     </div>
 
                     <div className='flex flex-wrap justify-center pt-8 gap-4 sm:gap-5'>

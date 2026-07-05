@@ -1,7 +1,11 @@
-function WebsiteMegaMenu() {
+type Mobile = {
+    mobile?:boolean
+}
+
+function WebsiteMegaMenu({mobile}:Mobile) {
     return (
         <>
-            <div className="flex items-start px-20">
+            <div className={mobile? "flex flex-col gap-4": "flex flex-row gap-8"}>
                 <div className="m-5">
                     <h5 className="text-base font-medium">DOMAINBD WEBSITE BUILDER</h5>
                     <div className="flex flex-col gap-10 mt-5">

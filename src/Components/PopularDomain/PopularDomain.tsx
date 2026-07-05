@@ -46,7 +46,7 @@ function PopularDomain() {
 
             <div className="bg-blue-50 rounded-2xl m-15 py-10">
                 <div className="text-center space-y-3">
-                    <h1 className="font-bold text-5xl tracking-wider text-[#0F172A]">Popular Domain Extensions</h1>
+                    <h1 className="font-bold text-4xl tracking-wider text-[#0F172A]">Popular Domain Extensions</h1>
                     <p className="font-medium text-xl">Find the perfect domain for your band</p>
                 </div>
 
