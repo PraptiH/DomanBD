@@ -55,10 +55,10 @@ function PopularDomain() {
                         <DomainCard key={domain.extension} domain={domain} />
                     ))}
                 </div>
-                <button className="border-2 border-blue-700 rounded-full px-4 py-2 mx-auto flex items-center cursor-ponter font-medium">View all domain extensons
+                <button className="border-2 border-blue-700 rounded-full px-4 py-2 mx-auto flex items-center cursor-pointer hover:bg-[#106e74] hover:text-white hover:border-white font-medium">View all domain extensons
                     <svg xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor" viewBox="0 0 24 24" color="blue"
-                        className="w-10">
+                        fill="currentColor" viewBox="0 0 24 24" 
+                        className="w-10  text-blue-700 hover:text-white">
                         <path d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"></path>
                     </svg>
                 </button>

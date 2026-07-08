@@ -67,11 +67,11 @@ function ServiceSection() {
                         }
                     </div>
 
-                    <button className="mt-4 flex items-center gap-3 rounded-full bg-white px-5 py-3 text-sm font-medium text-teal-900 cursor-pointer sm:px-6 sm:text-base lg:mt-0">
+                    <button className="mt-4 flex items-center gap-3 rounded-full bg-white px-5 py-3 text-sm font-medium hover:bg-teal-600 hover:text-white text-teal-900 cursor-pointer sm:px-6 sm:text-base lg:mt-0">
                         Explore all services
                         <svg xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor" viewBox="0 0 24 24" color="teal"
-                            className="h-5 w-5">
+                            className="h-5 w-5 hover:text-white">
                             <path d="M6 13h8.09l-3.3 3.29 1.42 1.42 5.7-5.71-5.7-5.71-1.42 1.42 3.3 3.29H6z"></path>
                         </svg>
                     </button>
